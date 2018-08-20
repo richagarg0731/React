@@ -1,0 +1,15 @@
+const SET_DATA            = 'QUESTIONS_SET_DATA'
+const SET_PAGE            = 'QUESTIONS_SET_PAGE'
+const SET_RESULT_PER_PAGE = 'QUESTIONS_SET_RESULT_PER_PAGE'
+const SET_TOTAL_PAGES     = 'QUESTIONS_SET_TOTAL_PAGES'
+const SET_TOTAL_RESULTS   = 'QUESTIONS_SET_TOTAL_RESULTS'
+const RESET               = 'QUESTIONS_RESET'
+
+export const constants = {
+    SET_DATA,           
+    SET_PAGE,           
+    SET_RESULT_PER_PAGE,
+    SET_TOTAL_PAGES,    
+    SET_TOTAL_RESULTS,  
+    RESET
+}

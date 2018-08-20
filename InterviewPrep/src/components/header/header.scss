@@ -1,0 +1,15 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem var(--page-gutter);
+  background-color: var(--color-primary);
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  .navigation-main {
+    margin-left: auto;
+  }
+}

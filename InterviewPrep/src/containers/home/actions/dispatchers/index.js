@@ -1,0 +1,1 @@
+export {dispatchers as home} from './home'
