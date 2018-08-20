@@ -65,6 +65,5 @@ export const abortAllRequests = () => {
 export const requests ={
   fetchData,
   initialize,
-  addQuestion,
   flush
 }

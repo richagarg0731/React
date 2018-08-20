@@ -8,16 +8,11 @@ import QuestionItem from "./question-item"
 class Questions extends PureComponent {
   constructor(props){
     super(props)
-    this.AddClick = this.AddClick.bind(this)
   }
 
   componentDidMount() {
     const id = this.props.id
     this.props.actions.initialize(id)
-  }
-
-  AddClick(e){
-    
   }
   
   render() {
@@ -32,7 +27,6 @@ class Questions extends PureComponent {
 
     return (
       <div>
-        <button onClick={this.onAddClick}>Add Question</button>
       <section>
         <h1>Questions</h1>
         <div>

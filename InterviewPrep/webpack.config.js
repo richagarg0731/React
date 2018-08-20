@@ -1,10 +1,16 @@
 const path = require('path');
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
 
+  output: {
+    path: path.resolve('dist'),
+    publicPath: '/',
+    filename: 'bundle.js'
+  },
+  
   module: {
     rules: [{
       test : /\.(js|jsx)$/,
@@ -45,13 +51,11 @@ module.exports = {
     extensions : ['*', '.js', '.jsx']
   },
 
-  output: {
-    path: path.resolve('dist'),
-    publicPath: '/',
-    filename: 'bundle.js'
-  },
 
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
       filename: '[name].css',

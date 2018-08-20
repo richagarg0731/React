@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import './navigation.scss'
 const Navigation = ({ items }) => (
   <nav className="navigation-main">
     <ol>
